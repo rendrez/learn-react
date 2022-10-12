@@ -6,11 +6,9 @@ import Counter from './component/Counter';
 import PlaceContentCenter from './component/PlaceContentCenter';
 
 function App() {
-    const [counter, setCount] = useState(0);
-
     return (
         <PlaceContentCenter>
-            <Counter setCount={setCount} counter={counter} />
+            <Counter />
         </PlaceContentCenter>
     );
 }

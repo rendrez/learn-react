@@ -1,6 +1,8 @@
 import Button from './Button';
 
 export default function Counter({ counter, setCount }) {
+    const [counter, setCount] = useState(0);
+
     function handleClick() {
         setCount((prevState) => prevState + 1);
     }
