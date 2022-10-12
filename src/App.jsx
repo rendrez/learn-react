@@ -8,7 +8,7 @@ import PlaceContentCenter from './component/PlaceContentCenter';
 function App() {
     return (
         <PlaceContentCenter>
-            <Counter />
+            <Counter initialValue={20} />
         </PlaceContentCenter>
     );
 }

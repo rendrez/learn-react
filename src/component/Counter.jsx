@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import Button from './Button';
 
-export default function Counter({ counter, setCount }) {
-    const [counter, setCount] = useState(0);
+export default function Counter({ initialValue }) {
+    const [counter, setCount] = useState(initialValue);
 
     function handleClick() {
         setCount((prevState) => prevState + 1);
